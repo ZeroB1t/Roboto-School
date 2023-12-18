@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+:root{
+    /*Цвет текста*/
+    --color_text_light: #fff;
+    --color_text_dark: #141024;
+
+    /*Цвет чисел*/
+    --color_count: #D52027;
+
+    /*Цвет фона*/
+    --color_block_dark: #141024;
+    --color_block_red: #D52027;
+
+    /*Цвет кнопок*/
+    --color_btn_dark: #141024;
+    --color_btn_red: #D52027;
+    --color_hover_btn_red: #b6191e;
+    --color_hover_btn_dark: #0a080f;
+}
+*, ::after, :hover{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost', sans-serif;
+}
+
+/*Container*/
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header color*/
+
+header{
+    background-color: var(--color_block_dark);
+}
+
+
+/*Menu*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.logo{
+    color: var(--color_text_light);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.menu > ul{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+li > a{
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #f19720;
+}
+
+.number{
+    color: var(--color_text_light);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*Block Header_intro*/
+
+.header__intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+h1{
+    color: var(--color_text_light);
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.info__text{
+    color: var(--color_text_light);
+    font-size: 20px;
+    max-width: 478px;
+    padding: 20px 0 50px 0;
+}
+
+.btn__sign{
+    color: var(--color_text_light);
+    background-color: var(--color_btn_red);
+    font-size: 18px;
+    padding: 25px 54px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn__sign:hover{
+    background-color: var(--color_hover_btn_red);
+}
+
+.item__img{
+    position: relative;
+    top: 3px;
+    max-width: 500px;
+    max-height: 650px;
+}
