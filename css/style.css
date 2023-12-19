@@ -4,6 +4,7 @@
     /*Цвет текста*/
     --color_text_light: #fff;
     --color_text_dark: #141024;
+    --color_text_light-dark: hsl(252, 38%, 70%);
 
     /*Цвет чисел*/
     --color_count: #D52027;
@@ -116,4 +117,86 @@ h1{
     top: 3px;
     max-width: 500px;
     max-height: 650px;
+}
+
+/* Section */
+
+.section__block{
+    margin: 120px 0;
+}
+
+.section__title{
+    color: var(--color_text_dark);
+    font-size: 30px;
+    max-width: 890px;
+    line-height: 35px;
+}
+
+.section__title_span{
+    font-weight: 600;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__item{
+    margin-top: 60px;
+}
+
+.item__count{
+    color: var(--color_count);
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.item__text{
+    color: var(--color_text_light-dark);
+    font-size: 18px;
+    max-width: 260px;
+    margin-top: 20px;
+}
+
+/* Block Hero */
+
+.caption{
+    color: var(--color_text_dark);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.items__hero{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 100px 0;
+    position: absolute;
+}
+
+.item__hero{
+    margin-right: 40px;
+}
+
+.captiont__item{
+    color: var(--color_text_dark);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.desc__item{
+    color: var(--color_text_light-dark);
+    font-size: 18px;
+    max-width: 360px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.btn__item__hero{
+    position: relative;
+    bottom: 120px;
+    left: 120px;
+    margin: 0;
+}
+
+.btn__item{
+    cursor: pointer;
 }
