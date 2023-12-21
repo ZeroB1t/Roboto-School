@@ -1,0 +1,27 @@
+@media screen and (max-width: 1050px) {
+
+    .menu{
+        display: none;
+    }
+
+    .nav{
+        padding: 10px 20px;
+    }
+    .menu_burger{
+        display: block;
+    }
+
+    .number{
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+
+    header{
+        width: 100%;
+    }
+}
