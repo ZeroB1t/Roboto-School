@@ -37,7 +37,6 @@ body{
 /*Header color*/
 
 header{
-    width: 100%;
     background-color: var(--color_block_dark);
 }
 
@@ -110,7 +109,7 @@ a:hover{
 .header__intro{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 50px;
 }
 
@@ -135,6 +134,7 @@ h1{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    z-index: 1;
 }
 
 .btn__sign:hover{
@@ -193,6 +193,7 @@ h1{
     color: var(--color_text_dark);
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 60px;
 }
 
 .items__hero{
@@ -223,12 +224,12 @@ h1{
     line-height: 25px;
     margin-top: 20px;
 }
-.btn__item__hero{
+/* .btn__item__hero{
     position: relative;
     bottom: 135px;
     left: 103px;
     margin: 0;
-}
+} */
 
 .btn__item{
     cursor: pointer;
