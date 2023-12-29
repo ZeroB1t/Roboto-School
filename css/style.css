@@ -121,3 +121,42 @@ body{
     max-width: 783px;
     max-height: 917.485px;
 }
+
+/* Стили для блока About */
+
+.about__content{
+    margin-top: 120px;
+}
+
+.about__desc-item{
+    color: var(--color_text_dark);
+    max-width: 891px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48px
+}
+
+.about__desc-bold {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px
+}
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    margin-top: 60px;
+}
+.about__grid__item-title {
+    color: var(--color_block_red);
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 112px;
+}
+.about__grid__item-desc {
+    color: var(--color_text_dark);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    max-width: 260px;
+}
