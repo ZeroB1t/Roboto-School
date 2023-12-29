@@ -26,3 +26,40 @@
 body{
     font-family: 'Jost', sans-serif;
 }
+
+/* Стили для меню и шапки */
+
+.header{
+    background-color: var(--color_block_dark);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.menu li{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.number{
+    color: var(--color_text_light);
+    font-size: 30px;
+    font-weight: 600;
+}
