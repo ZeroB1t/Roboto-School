@@ -27,6 +27,13 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
+/* Стили для контейнера */
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
 /* Стили для меню и шапки */
 
 .header{
@@ -62,4 +69,55 @@ body{
     color: var(--color_text_light);
     font-size: 30px;
     font-weight: 600;
+}
+
+/* Стили для наполнения в header */
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.header__info{
+    position: relative;
+    bottom: 130px;
+    z-index: 5;
+}
+
+.header__info-title {
+    color: var(--color_text_light);
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 112px;
+    white-space: nowrap;
+}
+
+.header__info-desc {
+    color: var(--color_text_light);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 478px;
+}
+
+.header__info-btn{
+    position: relative;
+    color: var(--color_text_light);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding: 25px 54px;
+    background-color: var(--color_btn_red);
+    border-radius: 5px;
+    top: 50px;
+}
+
+.header__img{
+    position: relative;
+    z-index: 2;
+    left: 29px;
+    max-width: 783px;
+    max-height: 917.485px;
 }
