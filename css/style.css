@@ -112,14 +112,15 @@ body{
     background-color: var(--color_btn_red);
     border-radius: 5px;
     top: 50px;
+    cursor: pointer;
 }
 
 .header__img{
     position: relative;
     z-index: 2;
     left: 29px;
-    max-width: 783px;
-    max-height: 917.485px;
+    max-width: 683px;
+    max-height: 817.485px;
 }
 
 /* Стили для блока About */
@@ -146,6 +147,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
     margin-top: 60px;
+    margin-bottom: 220px;
 }
 .about__grid__item-title {
     color: var(--color_block_red);
@@ -159,4 +161,69 @@ body{
     font-weight: 400;
     line-height: 28.8px;
     max-width: 260px;
+}
+
+/* Стили для блока intro */
+
+.intro__content {
+}
+.intro__title {
+    margin-bottom: 60px;
+}
+.intro__title-item {
+    color: var(--color_text_dark);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+}
+.intro__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+}
+.intro__grid-item {
+}
+
+.intro__grid__item-title {
+    color: var(--color_text_dark);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 38.4px;
+    margin-bottom: 20px;
+}
+.intro__grid__item-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    max-width: 360px;
+}
+
+.clue{
+    margin-left:  3px;
+    cursor: pointer;
+}
+/* Стили для модального окна подсказки */
+
+.modal__clue{
+    display: none;
+    position: relative;
+    box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
+    filter: blur(0.2px);
+}
+.modal__clue-title{
+    position: absolute;
+    display: inline-block;
+    left: 115px;
+    bottom: 14px;
+    color: var(--color_text_dark);
+    border-radius: 5px;
+    background: #FFF;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.10);
+    text-align: center;
+    width: 251px;
+}
+
+.clue:hover + .modal__clue{
+    display: block;
 }
