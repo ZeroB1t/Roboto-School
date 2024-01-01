@@ -244,6 +244,8 @@ body{
 }
 
 .wrap__teachers {
+    display: flex;
+    gap: 40px;
 }
 
 .item__teachers {
