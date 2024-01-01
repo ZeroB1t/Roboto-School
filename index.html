@@ -79,11 +79,11 @@
                         <p class="intro__grid__item-desc">По основам разработки учебно-методических комплексов <br> по робототехнике и программированию</p>
                     </div>
                     <div class="intro__grid-item">
-                        <div class="modal__clue clue__off">
+                        <div class="modal__clue" id="hidden-element">
                             <h4 class="modal__clue-title">При наличии свободных мест</h4>
                         </div>
                         <h3 class="intro__grid__item-title">Практику 
-                            <button class="clue"><img src="img/Group 207.svg" alt="кнопка с подсказкой">
+                            <button class="clue" id="click-to-hide"><img src="img/Group 207.svg" alt="кнопка с подсказкой">
                         </button></h3>
                         <p class="intro__grid__item-desc">Возможность пройти практику по преподаванию робототехники на базе <br> R:ED LAB (в оффлайн или онлайн формате)</p>
                     </div>
@@ -91,56 +91,6 @@
             </div>
         </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const clueButton = document.querySelector(".clue");
-        const modalClue = document.querySelector(".modal__clue");
-
-        // Функция для плавного появления
-        function fadeIn(element) {
-            let opacity = 0;
-            element.style.display = "block";
-
-            function increaseOpacity() {
-                opacity += 0.1;
-                element.style.opacity = opacity;
-
-                if (opacity < 1) {
-                    requestAnimationFrame(increaseOpacity);
-                }
-            }
-
-            requestAnimationFrame(increaseOpacity);
-        }
-
-        // Функция для плавного исчезания
-        function fadeOut(element) {
-            let opacity = 1;
-
-            function decreaseOpacity() {
-                opacity -= 0.1;
-                element.style.opacity = opacity;
-
-                if (opacity > 0) {
-                    requestAnimationFrame(decreaseOpacity);
-                } else {
-                    element.style.display = "none";
-                }
-            }
-
-            requestAnimationFrame(decreaseOpacity);
-        }
-
-        clueButton.addEventListener("mouseenter", function () {
-            fadeIn(modalClue);
-        });
-
-        clueButton.addEventListener("mouseleave", function () {
-            fadeOut(modalClue);
-        });
-    });
-
-    </script>
+    <script src="js/tap.js"></script>
 </body>
-
 </html>
