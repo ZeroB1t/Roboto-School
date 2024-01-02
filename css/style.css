@@ -396,6 +396,7 @@ body{
     display: flex;
     align-items: center;
     padding: 87px 0;
+    margin-left: 60px;
 }
 .record__title {
 }
