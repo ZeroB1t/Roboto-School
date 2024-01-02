@@ -235,7 +235,7 @@ body{
     margin-top: 120px;
 }
 
-.teachers__profi{
+.teachers__profi, .name__block{
     color: var(--color_text_dark);
     font-size: 50px;
     font-weight: 600;
@@ -254,7 +254,7 @@ body{
 .teacher__photo {
 }
 
-.teacher__name {
+.teacher__name{
     color: var(--color_text_dark);
     font-size: 24px;
     font-weight: 600;
@@ -312,4 +312,68 @@ body{
     transform: scaleX(-1);
     margin-left: 13px;
     cursor: pointer;
+}
+
+/* Стили для блока Rate */
+
+.rate-content {
+} 
+
+.rate-wrapper {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+} 
+
+.rate-item {
+    display: block;
+    width: 360px;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 16, 36, 0.20);
+    transition: all 0.3s ease; /* добавляем плавность эффекта */
+}
+
+.rate-item:hover{
+    transform: scale(1.05);
+    background-color: var(--color_text_dark);
+}
+
+.rate__item-name {
+    color: var(--color_text_dark);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    padding-top: 40px;
+}
+
+.rate__item-price {
+    color: var(--color_text_dark);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    padding-top: 83px;
+}
+
+.rate__item-desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding-top: 20px;
+}
+
+.rate__item-btn {
+    border-radius: 5px;
+    background: var(--color_btn_red);
+    width: 280px;
+    padding: 25px 54px;
+    color: var(--color_text_light);
+    margin: 52px 0 40px;
+    cursor: pointer;
+}
+
+.rate-item:hover .rate__item-name,
+.rate-item:hover .rate__item-price,
+.rate-item:hover .rate__item-desc,
+.rate-item:hover .rate__item-btn {
+    color: #fff; /* меняем цвет текста на белый */
 }
