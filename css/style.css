@@ -245,10 +245,14 @@ body{
 
 .wrap__teachers {
     display: flex;
-    gap: 40px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 .item__teachers {
+    flex: 0 0 auto;
+    margin-right: 40px; /* Устанавливаем расстояние между элементами (gap) */
+    transition: transform 0.5s ease-in-out;
 }
 
 .teacher__photo {
@@ -316,7 +320,8 @@ body{
 
 /* Стили для блока Rate */
 
-.rate-content {
+.rate__content {
+    margin-bottom: 120px;
 } 
 
 .rate-wrapper {
@@ -377,3 +382,81 @@ body{
 .rate-item:hover .rate__item-btn {
     color: #fff; /* меняем цвет текста на белый */
 }
+
+/* Стили для блока Record */
+
+.record{
+    background-color: var(--color_block_red);
+    background-image: url(../img/bg.svg);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+.record__content {
+    display: flex;
+    align-items: center;
+    padding: 87px 0;
+}
+.record__title {
+}
+.record__name {
+    color: var(--color_text_light);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46.8px;
+    max-width: 476px;
+}
+.record__desc {
+    color: var(--color_text_light);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px
+}
+
+.form__record{
+    display: flex;
+    flex-direction: column;
+}
+
+.user__name {
+    padding: 19px 181px 19px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.user__number {
+    padding: 19px 181px 19px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.user__email {
+    padding: 19px 191px 19px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.user__name::placeholder,
+.user__email::placeholder,
+.user__number::placeholder{
+    width: 299px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(40, 41, 68, 0.70);
+}
+
+.btn__record{
+    padding: 19px 182px 18px 183px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color_btn_dark);
+    color: var(--color_text_light);
+}
+
+/* Стили для блока footer */
