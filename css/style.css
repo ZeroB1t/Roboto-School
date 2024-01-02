@@ -21,6 +21,7 @@
 }
 *, ::after, :hover{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
