@@ -426,6 +426,8 @@ body{
     border-radius: 5px;
     width: 500px;
     margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
 }
 
 .user__number {
@@ -434,6 +436,8 @@ body{
     border-radius: 5px;
     width: 500px;
     margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
 }
 
 .user__email {
@@ -442,6 +446,8 @@ body{
     border-radius: 5px;
     width: 500px;
     margin-bottom: 10px;
+    font-size: 18px;
+    outline: none;
 }
 
 .user__name::placeholder,
