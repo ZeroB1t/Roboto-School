@@ -26,6 +26,7 @@
 
 body{
     font-family: 'Jost', sans-serif;
+    width: 100%;
 }
 
 /* Стили для контейнера */
@@ -70,6 +71,19 @@ body{
     color: var(--color_text_light);
     font-size: 30px;
     font-weight: 600;
+}
+
+/* Скрытые до 1150px */
+
+.nav__mobile{
+    display: flex;
+    gap: 10px;
+}
+
+.number__mobile,
+.menu__burger{
+    display: none;
+    cursor: pointer;
 }
 
 /* Стили для наполнения в header */
@@ -118,7 +132,7 @@ body{
 
 .header__img{
     position: relative;
-    z-index: 2;
+    z-index: 0;
     left: 29px;
     max-width: 683px;
     max-height: 817.485px;
@@ -251,9 +265,9 @@ body{
 }
 
 .item__teachers {
-    flex: 0 0 auto;
-    margin-right: 40px; /* Устанавливаем расстояние между элементами (gap) */
+    flex: 1;
     transition: transform 0.5s ease-in-out;
+    min-width: 100%;
 }
 
 .teacher__photo {
@@ -444,7 +458,7 @@ body{
     padding: 19px 191px 19px 20px;
     border: none;
     border-radius: 5px;
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 10px;
     font-size: 18px;
     outline: none;
@@ -453,7 +467,6 @@ body{
 .user__name::placeholder,
 .user__email::placeholder,
 .user__number::placeholder{
-    width: 299px;
     font-size: 18px;
     font-weight: 400;
     color: rgba(40, 41, 68, 0.70);

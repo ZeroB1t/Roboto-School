@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showItem(index) {
         items.forEach((item, i) => {
-            const translateValue = (i - index) * (item.offsetWidth + 40) + 'px'; // Учитываем gap
+            const translateValue = (i - index) * item.offsetWidth + 'px';
             item.style.transform = `translateX(${translateValue})`;
         });
     }
